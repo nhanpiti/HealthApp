@@ -1,0 +1,941 @@
+{
+  "namespaces": [],
+  "tables": [
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "country_code": {
+          "name": "country_code",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "phone_number": {
+          "name": "phone_number",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        }
+      },
+      "name": "customer_entity",
+      "indexes": [
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {}
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        }
+      },
+      "name": "exercise_posture_entity",
+      "indexes": [
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {}
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "image": {
+          "name": "image",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        }
+      },
+      "name": "exercise_type_entity",
+      "indexes": [
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {}
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "image": {
+          "name": "image",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        }
+      },
+      "name": "meal_type_entity",
+      "indexes": [
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {}
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "calorie_unit": {
+          "name": "calorie_unit",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "weight_unit": {
+          "name": "weight_unit",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "customer_id": {
+          "name": "customer_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        }
+      },
+      "name": "personal_profile_entity",
+      "indexes": [
+        {
+          "columnNames": [
+            "customer_id"
+          ],
+          "composite": false,
+          "keyName": "personal_profile_entity_customer_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "personal_profile_entity_customer_id_foreign": {
+          "constraintName": "personal_profile_entity_customer_id_foreign",
+          "columnNames": [
+            "customer_id"
+          ],
+          "localTableName": "personal_profile_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "customer_entity",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "meal_type_id": {
+          "name": "meal_type_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "image": {
+          "name": "image",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "personal_profile_id": {
+          "name": "personal_profile_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        }
+      },
+      "name": "meal_entity",
+      "indexes": [
+        {
+          "columnNames": [
+            "meal_type_id"
+          ],
+          "composite": false,
+          "keyName": "meal_entity_meal_type_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "composite": false,
+          "keyName": "meal_entity_personal_profile_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "meal_entity_meal_type_id_foreign": {
+          "constraintName": "meal_entity_meal_type_id_foreign",
+          "columnNames": [
+            "meal_type_id"
+          ],
+          "localTableName": "meal_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "meal_type_entity",
+          "updateRule": "cascade"
+        },
+        "meal_entity_personal_profile_id_foreign": {
+          "constraintName": "meal_entity_personal_profile_id_foreign",
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "localTableName": "meal_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "personal_profile_entity",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "personal_profile_id": {
+          "name": "personal_profile_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "weight": {
+          "name": "weight",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "fat_ratio": {
+          "name": "fat_ratio",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        }
+      },
+      "name": "health_indicator_entity",
+      "indexes": [
+        {
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "composite": false,
+          "keyName": "health_indicator_entity_personal_profile_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "health_indicator_entity_personal_profile_id_foreign": {
+          "constraintName": "health_indicator_entity_personal_profile_id_foreign",
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "localTableName": "health_indicator_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "personal_profile_entity",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "exercise_type_id": {
+          "name": "exercise_type_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "calories_burn": {
+          "name": "calories_burn",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "personal_profile_id": {
+          "name": "personal_profile_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        }
+      },
+      "name": "exercise_entity",
+      "indexes": [
+        {
+          "columnNames": [
+            "exercise_type_id"
+          ],
+          "composite": false,
+          "keyName": "exercise_entity_exercise_type_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "composite": false,
+          "keyName": "exercise_entity_personal_profile_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "exercise_entity_exercise_type_id_foreign": {
+          "constraintName": "exercise_entity_exercise_type_id_foreign",
+          "columnNames": [
+            "exercise_type_id"
+          ],
+          "localTableName": "exercise_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "exercise_type_entity",
+          "updateRule": "cascade"
+        },
+        "exercise_entity_personal_profile_id_foreign": {
+          "constraintName": "exercise_entity_personal_profile_id_foreign",
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "localTableName": "exercise_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "personal_profile_entity",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "exercise_posture_entity_id": {
+          "name": "exercise_posture_entity_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "exercise_entity_id": {
+          "name": "exercise_entity_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        }
+      },
+      "name": "exercise_posture_entity_exercises",
+      "indexes": [
+        {
+          "columnNames": [
+            "exercise_posture_entity_id"
+          ],
+          "composite": false,
+          "keyName": "exercise_posture_entity_exercises_exercise_posture_entity_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "columnNames": [
+            "exercise_entity_id"
+          ],
+          "composite": false,
+          "keyName": "exercise_posture_entity_exercises_exercise_entity_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "exercise_posture_entity_exercises_exercise_posture_entity_id_foreign": {
+          "constraintName": "exercise_posture_entity_exercises_exercise_posture_entity_id_foreign",
+          "columnNames": [
+            "exercise_posture_entity_id"
+          ],
+          "localTableName": "exercise_posture_entity_exercises",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "exercise_posture_entity",
+          "deleteRule": "cascade",
+          "updateRule": "cascade"
+        },
+        "exercise_posture_entity_exercises_exercise_entity_id_foreign": {
+          "constraintName": "exercise_posture_entity_exercises_exercise_entity_id_foreign",
+          "columnNames": [
+            "exercise_entity_id"
+          ],
+          "localTableName": "exercise_posture_entity_exercises",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "exercise_entity",
+          "deleteRule": "cascade",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "exercise_entity_id": {
+          "name": "exercise_entity_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "exercise_posture_entity_id": {
+          "name": "exercise_posture_entity_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        }
+      },
+      "name": "exercise_entity_postures",
+      "indexes": [
+        {
+          "columnNames": [
+            "exercise_entity_id"
+          ],
+          "composite": false,
+          "keyName": "exercise_entity_postures_exercise_entity_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "columnNames": [
+            "exercise_posture_entity_id"
+          ],
+          "composite": false,
+          "keyName": "exercise_entity_postures_exercise_posture_entity_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "exercise_entity_postures_exercise_entity_id_foreign": {
+          "constraintName": "exercise_entity_postures_exercise_entity_id_foreign",
+          "columnNames": [
+            "exercise_entity_id"
+          ],
+          "localTableName": "exercise_entity_postures",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "exercise_entity",
+          "deleteRule": "cascade",
+          "updateRule": "cascade"
+        },
+        "exercise_entity_postures_exercise_posture_entity_id_foreign": {
+          "constraintName": "exercise_entity_postures_exercise_posture_entity_id_foreign",
+          "columnNames": [
+            "exercise_posture_entity_id"
+          ],
+          "localTableName": "exercise_entity_postures",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "exercise_posture_entity",
+          "deleteRule": "cascade",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "personal_profile_id": {
+          "name": "personal_profile_id",
+          "type": "integer",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        }
+      },
+      "name": "diary_notebook_entity",
+      "indexes": [
+        {
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "composite": false,
+          "keyName": "diary_notebook_entity_personal_profile_id_index",
+          "primary": false,
+          "unique": false
+        },
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {
+        "diary_notebook_entity_personal_profile_id_foreign": {
+          "constraintName": "diary_notebook_entity_personal_profile_id_foreign",
+          "columnNames": [
+            "personal_profile_id"
+          ],
+          "localTableName": "diary_notebook_entity",
+          "referencedColumnNames": [
+            "id"
+          ],
+          "referencedTableName": "personal_profile_entity",
+          "updateRule": "cascade"
+        }
+      }
+    },
+    {
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "unsigned": true,
+          "autoincrement": true,
+          "primary": true,
+          "nullable": false,
+          "mappedType": "integer"
+        },
+        "created_time": {
+          "name": "created_time",
+          "type": "datetime",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "length": 0,
+          "mappedType": "datetime"
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "file_name": {
+          "name": "file_name",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        },
+        "mimetype": {
+          "name": "mimetype",
+          "type": "text",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "mappedType": "text"
+        }
+      },
+      "name": "splash_screen_entity",
+      "indexes": [
+        {
+          "keyName": "primary",
+          "columnNames": [
+            "id"
+          ],
+          "composite": false,
+          "primary": true,
+          "unique": true
+        }
+      ],
+      "checks": [],
+      "foreignKeys": {}
+    }
+  ]
+}
